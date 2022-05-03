@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+nav {
+    display: flex; /*Deixa um do lado do outro*/
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
+    background: #23232e;
+    height: 8vh; /*Cobre a altura da janela de visualização. 100 cobre tudo*/
+ }
+
+ 
+.nav-list{
+    list-style: none;  /* Retira as bolinhas de lista*/
+    display: flex;
+    color: #fff;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    padding-top: 18px;
+}
+
+.logo-menu{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;  /*Controla os espaços em branco do texto*/
+}
+
+.icons{
+    padding: 4%;
+    font-size: 25px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+
+/* MAIN - CAROUSEL */
+
+
+.carousel-item{
+    height: 20rem;
+    text-align: center; 
+    padding-bottom: 20px;
+}
+
+.carousel{
+    background:#2a2a3a; 
+}
+
+
+/* MAIN - JUMBOTRON */
+
+.jumbotron{
+    background: #23232e;
+}
+
+.container2{
+    text-align: center;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+}
+
+
+/* MAIN - CARDS */
+
+.col-12{
+    color: #fff;
+    text-transform: uppercase;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container3{
+    padding-bottom: 60px;
+    background: #2a2a3a;
+}
+
+.card{
+    width: 320px;
+    margin-left: 60px;
+}
+
+.card-img-top{
+    height: 340px;
+}
+
+
+
+/* FOOTER */
+
+.container5{
+    background: #23232e;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer-bottom{
+    text-align: center;  /* Faz ficar no centro */
+    line-height: 50px; /* Faz ficar no centro */
+    background-color: #fff;
+}
+
+.redes{   /* Para mudar os icons de um agrupamento vertical para horizontal  */
+    display: flex;
+    margin-left: 60px;
+}
+
+.bi{  /* Permite um espaçamento entre os ícones  */
+    padding: 5px;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Controla os espaços em branco do texto*/
+    padding-top: 40px;
+    text-decoration: none; 
+    color: #fff; 
+    margin-right: 200px;
+    margin-left: 100px;
+}
+
+.logo:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+dl{
+    text-align: center;
+}
+
+.title-footer{
+    line-height: 50px;
+    text-align: center;
+}
+
+
+/* GERAL */
+
+a {
+    color: #fff;
+    transition: 0.3s;
+    padding-bottom: 2px;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+
+@media (max-width: 999px){
+
+    body{
+        overflow-x: hidden; /*Esconde o submenu do scrolling horizontal*/
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);   /*Remove esse submenu da tela principal*/
+        z-index: 999;  /* Dá importância para o submenu fazendo-o sobrepor o carrossel */
+        transition: transform 0.3s ease-in;  /* Fornece uma chegada suave do submenu*/
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .icons{  /* */
+        display: block;
+    }
+
+    .nav-list.active{
+        transform: translateX(0);  /*Fazer o submenu aparercer quando clicar no botão active*/
+        z-index: 999; /* Dá importância para o submenu fazendo-o sobrepor o carrossel */
+    }
+
+    .carousel-item{
+        height: 8vh;
+    }    
+
+    .redes{   /* Para mudar os icons de um agrupamento vertical para horizontal  */
+        margin-right: 40px;
+        z-index: 999;
+    }
+}
+
+@keyframes navLinkFade {  /*Representa o inicio(From) e o Fim(to) de uma animação*/
+
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }    
+}
+
+h5{
+    /* margin-left: 35px;*/
+    text-align: center;
+}
