@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World's Villians - DC</title>
+
+    <link href="./CSS/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+
+      <header>
+        <nav>
+            <a class="logo-menu" href="home.html">World's Villians</a> 
+
+            <div class="icons">
+              <i class="bi bi-list"></i>
+            </div>
+            
+            <ul class="nav-list">
+                <li><a class="nav-list-endereco" href="home.html">Home</a></li>
+                <li href="#"><a class="nav-list-endereco"  onclick="toggle()">About</a></li>
+                <li><a class="nav-list-endereco" href="disney.html">Disney</a></li>
+                <li><a class="nav-list-endereco" href="marvel.html">Marvel</a></li>
+                <li><a class="nav-list-endereco" href="dc.html">DC</a></li>
+                <li><div class="icons-search">
+                  <a class="search-btn" href="#">
+                    <i class="bi bi-search" ></i>
+                  </a>
+                  </div>
+                </li>
+            </ul>
+            <div id="campoAbout"></div>
+        </nav> 
+    </header>
+
+    <main>
+
+        <section class="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="backContainer">
+                  <div class="carousel-item active">
+                    <img src="./CSS/Fotos/DC/dc.png" style="width:20rem; height: 20rem;" class="img-fluid" alt="Responsive image">
+              </div>
+        </section>
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="offset-2 col-xs-2 col-md-8">
+            <div class="container2">
+              <h2 class="jumbotron-heading">"O meu nome é Cobblepot seu cretino! Você acha que os meus pais me chamaram de Pinguim?"</h2>
+              <p><i style="color: rgb(80, 173, 173);">Pinguim</i></p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="nav nav-tabs nav-feed" id="myTabMarvel" role="tablist">
+            <li class="nav-item" id="dc" role="presentation">
+                <a class="nav-link active nav-link-1" id="liga-tab" data-bs-toggle="tab" href="#liga" role="tab"
+                    aria-controls="liga" aria-selected="true">LIGA DA JUSTIÇA</a>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <a class="nav-link nav-link-2" id="jovens-tab" data-bs-toggle="tab" href="#jovens" role="tab"
+                    aria-controls="jovens" aria-selected="false">JOVENS TITÃS</a>
+            </li>
+
+          </ul>
+
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="liga-tab" role="tabpanel" aria-labelledby="home-tab">
+
+                <!--Personalidade-->
+
+                <div class="row" style="padding-bottom: 25px; padding-top: 25px;">
+                    <section class="section-with-carousel">
+                     
+                         <div class="carousel-wrapper">
+                           <div class="swiper">
+                             <div class="swiper-wrapper">
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/DC/amazo.jpeg">
+                                     <p class="description-home">Amazo</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/DC/darkside.jpg">
+                                     <p class="description-home">DarkSide</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/DC/desespero.jpeg">
+                                     <p class="description-home">Desespero</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/DC/antimonitor.jpeg">
+                                     <p class="description-home">Antimonitor</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/DC/ligaDaInjustica.jpeg">
+                                     <p class="description-home">Liga da Injustiça</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                <figure id="container">
+                                    <img class="photoSlide" src="./CSS/Fotos/DC/marcianosBrancos.jpeg">
+                                    <p class="description-home">Marcianos Brancos</p>
+                                </figure>
+                              </div>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="carousel-controlsLiga">
+                           <div class="carousel-control carousel-control-left">
+                              <i class="bi bi-arrow-left-short"></i>
+                             </div>
+                             <div class="carousel-control carousel-control-right">
+                              <i class="bi bi-arrow-right-short"></i>
+                             </div>
+                         </div>
+                       </section>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="jovens" role="tabpanel" aria-labelledby="profile-tab">
+
+                <!--Aparência-->
+
+                <div class="row" style="padding-bottom: 25px; padding-top: 25px;">
+                    <section class="section-with-carousel">
+                         <div class="carousel-wrapper">
+                           <div class="swiper">
+                             <div class="swiper-wrapper">
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/DC/exterminador.webp">
+                                     <p class="description-home">O Exterminador</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/DC/estrelaNegra.jpg">
+                                     <p class="description-home">Estrela Negra</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/DC/doutorLuz.webp">
+                                     <p class="description-home">Doutor Luz</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/DC/lince.jpg">
+                                     <p class="description-home">Lince</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/DC/gizmo.webp">
+                                     <p class="description-home">Gizmo</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                <figure id="container">
+                                    <img class="photoSlide" src="./CSS/Fotos/DC/irmaoSangue.png">
+                                    <p class="description-home">Irmão do Sangue</p>
+                                </figure>
+                              </div>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="carousel-controls-xmen">
+                           <div class="carousel-control carousel-control-left">
+                              <i class="bi bi-arrow-left-short"></i>
+                             </div>
+                             <div class="carousel-control carousel-control-right">
+                              <i class="bi bi-arrow-right-short"></i>
+                             </div>
+                         </div>
+                       </section>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          
+          <section class="section-with-carousel" id="viloesSpider">
+            <a class="link_categoria" href="./esportes.html"><h2 class="thumbTitle" id="titleVilaoDc">Vilões do Batman</h2></a>
+             <div class="carousel-wrapper">
+               <div class="swiper">
+                 <div class="swiper-wrapper">
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/DC/joker.jpg">
+                         <p class="description-home">Joker</p>
+                     </figure>
+                   </div>
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/DC/charada.jpg">
+                         <p class="description-home">Charada</p>
+                     </figure>
+                   </div>
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/DC/pinguim.webp">
+                         <p class="description-home">Pinguim</p>
+                     </figure>
+                   </div>
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/DC/catwoman.jpg">
+                         <p class="description-home">Mulher Gato</p>
+                     </figure>
+                   </div>
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/DC/duasCaras.jpg">
+                         <p class="description-home">Duas Caras</p>
+                     </figure>
+                   </div>
+                   <div class="swiper-slide">
+                    <figure id="container">
+                        <img class="photoSlide" src="./CSS/Fotos/DC/hera.jpg">
+                        <p class="description-home">Hera</p>
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure id="container">
+                        <img class="photoSlide" src="./CSS/Fotos/DC/arlequina.jpg">
+                        <p class="description-home">Arlequina</p>
+                    </figure>
+                  </div>
+                 </div>
+               </div>
+             </div>
+             <div class="carousel-controls-batman">
+               <div class="carousel-control carousel-control-left">
+                   <i class="bi bi-arrow-left-short"></i>
+                 </div>
+                 <div class="carousel-control carousel-control-right">
+                   <i class="bi bi-arrow-right-short"></i>
+                 </div>
+             </div>
+           </section>
+
+           <section class="section-with-carousel" id="viloesSpider">
+            <a class="link_categoria" href="./esportes.html"><h2 class="thumbTitle" id="titleVilaoDc">Vilões do Flash</h2></a>
+             <div class="carousel-wrapper">
+               <div class="swiper">
+                 <div class="swiper-wrapper">
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/DC/flashreverso.jpg">
+                         <p class="description-home">Flash Reverso</p>
+                     </figure>
+                   </div>
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/DC/frio.jpg">
+                         <p class="description-home">Capitão Frio</p>
+                     </figure>
+                   </div>
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/DC/pensador.jpg">
+                         <p class="description-home">O pensador</p>
+                     </figure>
+                   </div>
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/DC/abracadabra.webp">
+                         <p class="description-home">Abrakadabra</p>
+                     </figure>
+                   </div>
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/DC/grood.jpg">
+                         <p class="description-home">Grodd</p>
+                     </figure>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="carousel-controls-flash">
+               <div class="carousel-control carousel-control-left">
+                   <i class="bi bi-arrow-left-short"></i>
+                 </div>
+                 <div class="carousel-control carousel-control-right">
+                   <i class="bi bi-arrow-right-short"></i>
+                 </div>
+             </div>
+           </section>
+
+
+  </main>
+
+        <footer>
+          <div class="container5">
+            <div class="row">
+              <div class="col-lg-3 mb-3">
+                <h5 class="logo">World's Villians</h5>
+                
+              </div>
+
+              <div class="col-6 col-lg-2 mb-3">
+                <h5 class="title-footer">Company</h5>
+                <dl>
+                  <dt><a class="nav-list-endereco" href="#">about us</a></dt>
+                  <dt><a class="nav-list-endereco" href="#"> our services</a></dt>
+                  <dt><a class="nav-list-endereco" href="#">privacy policy</a></dt>
+                  <dt><a class="nav-list-endereco" href="#">affiliate program</a></dt>
+              </dl>
+              </div>
+
+              <div class="col-6 col-lg-2 mb-3">
+                <h5 class="title-footer">Get Help</h5>
+                <dl>
+                  <dt><a class="nav-list-endereco" href="#">about us</a></dt>
+                  <dt><a class="nav-list-endereco" href="#"> our services</a></dt>
+                  <dt><a class="nav-list-endereco" href="#">privacy policy</a></dt>
+                  <dt><a class="nav-list-endereco" href="#">affiliate program</a></dt>
+              </dl>
+              </div>
+
+              <div class="col-6 col-lg-2 mb-3">
+                <h5 class="title-footer">Online Chat</h5>
+                <dl>
+                  <dt><a class="nav-list-endereco" href="#">about us</a></dt>
+                  <dt><a class="nav-list-endereco" href="#"> our services</a></dt>
+                  <dt><a class="nav-list-endereco" href="#">privacy policy</a></dt>
+                  <dt><a class="nav-list-endereco" href="#">affiliate program</a></dt>
+              </dl>
+              </div>
+
+              <div class="col-6 col-lg-2 mb-3">
+                <h5 class="title-footer">Follow us</h5>
+                <dl class="redes">
+                  <dt><a class="nav-list-endereco" href="#"><i class="bi bi-instagram"></i></a></dt>
+                  <dt><a class="nav-list-endereco" href="#"><i class="bi bi-youtube"></i></i></a></dt>
+                  <dt><a class="nav-list-endereco" href="#"><i class="bi bi-whatsapp"></i></a></dt>
+                  <dt><a class="nav-list-endereco" href="#"><i class="bi bi-facebook"></i></a></dt>
+              </dl>
+                  
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p> © 2022 World's Villians Company</p>
+          </div>
+
+        </footer>
+
+    <script src="home.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+</body>
+</html>

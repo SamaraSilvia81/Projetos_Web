@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World's Villians - Disney</title>
+
+    <link href="./CSS/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+
+      <header>
+        <nav>
+            <a class="logo-menu" href="home.html">World's Villians</a> 
+
+            <div class="icons">
+              <i class="bi bi-list"></i>
+            </div>
+            
+            <ul class="nav-list">
+                <li><a class="nav-list-endereco" href="home.html">Home</a></li>
+                <li href="#"><a class="nav-list-endereco"  onclick="toggle()">About</a></li>
+                <li><a class="nav-list-endereco" href="disney.html">Disney</a></li>
+                <li><a class="nav-list-endereco" href="marvel.html">Marvel</a></li>
+                <li><a class="nav-list-endereco" href="dc.html">DC</a></li>
+                <li><div class="icons-search">
+                  <a class="search-btn" href="#">
+                    <i class="bi bi-search" ></i>
+                  </a>
+                  </div>
+                </li>
+            </ul>
+            <div id="campoAbout"></div>
+        </nav> 
+    </header>
+
+    <main>
+
+        <section class="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="backContainer">
+                  <div class="carousel-item active">
+                    <img src="/CSS/Fotos/Disney/disneyLogo.jpg" style="width:20rem; height:20rem;" class="img-fluid" alt="Responsive image">
+              </div>
+        </section>
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="offset-2 col-xs-2 col-md-8">
+            <div class="container2">
+              <h2 class="jumbotron-heading">"Todo mundo pode ser super! Aí quando todo mundo for super... ninguém vai ser mais."</h2>
+              <p><i style="color: rgb(80, 173, 173);">Síndrome</i></p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="nav nav-tabs nav-feed" id="myTab" role="tablist">
+            <li class="nav-item" id="disney" role="presentation">
+                <a class="nav-link active nav-link-1" id="ouro-tab" data-bs-toggle="tab" href="#ouro" role="tab"
+                    aria-controls="ouro" aria-selected="true">Era de Ouro</a>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <a class="nav-link nav-link-2" id="prata-tab" data-bs-toggle="tab" href="#prata" role="tab"
+                    aria-controls="prata" aria-selected="false">Era de Prata</a>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <a class="nav-link nav-link-2" id="renascenca-tab" data-bs-toggle="tab" href="#renascenca" role="tab"
+                  aria-controls="renascenca" aria-selected="false">Renascença</a>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <a class="nav-link nav-link-2" id="novaRenascenca-tab" data-bs-toggle="tab" href="#novaRenascenca" role="tab"
+                  aria-controls="novaRenascenca" aria-selected="false">Nova-Renascença</a>
+            </li>
+
+          </ul>
+
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="ouro-tab" role="tabpanel" aria-labelledby="profile-tab">
+
+                <!--Personalidade-->
+
+                <div class="row" style="padding-bottom: 25px; padding-top: 25px;">
+                    <section class="section-with-carousel">
+                     
+                         <div class="eraDeOuro">
+                                 <figure id="containerOuro">
+                                     <img class="photoSlideOuro" src="./CSS/Fotos/Disney/rainhamá.jpg">
+                                     <p class="description-home">Rainha Má</p>
+                                 </figure>
+                                <figure id="containerOuro">
+                                    <img class="photoSlideOuro" src="./CSS/Fotos/Disney/Stromboli.jpg">
+                                    <p class="description-home">Stromboli</p>
+                                </figure>
+                                <figure id="containerOuro">
+                                    <img class="photoSlideOuro" src="./CSS/Fotos/Disney/cacador.jpg">
+                                    <p class="description-home">O caçador de Bambi</p>
+                                </figure>
+                            </div>
+                       </section>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="prata" role="tabpanel" aria-labelledby="profile-tab">
+
+                <!--Aparência-->
+
+                <div class="row" style="padding-bottom: 25px; padding-top: 25px;">
+                    <section class="section-with-carousel">
+                         <div class="carousel-wrapper">
+                           <div class="swiper">
+                             <div class="swiper-wrapper">
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/Disney/malevola.jpg">
+                                     <p class="description-home">Malévola</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                <figure id="container">
+                                    <img class="photoSlide" src="./CSS/Fotos/Disney/cruela.webp">
+                                    <p class="description-home">Cruela De</p>
+                                </figure>
+                              </div>
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/Disney/ladyTremaine.webp">
+                                     <p class="description-home">Lady Tremaine</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/Disney/madameMin.jpg">
+                                     <p class="description-home">Madame Min</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/Disney/RainhaDeCopas.jpg">
+                                     <p class="description-home">Rainha de Copas</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                 <figure id="container">
+                                     <img class="photoSlide" src="./CSS/Fotos/Disney/shereKhan.png">
+                                     <p class="description-home">Shere Khan</p>
+                                 </figure>
+                               </div>
+                               <div class="swiper-slide">
+                                <figure id="container">
+                                    <img class="photoSlide" src="./CSS/Fotos/Disney/gancho.jpg">
+                                    <p class="description-home">Capitão Gancho</p>
+                                </figure>
+                              </div>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="carousel-controlsDisney">
+                          <div class="carousel-control carousel-control-left">
+                             <i class="bi bi-arrow-left-short"></i>
+                            </div>
+                            <div class="carousel-control carousel-control-right">
+                             <i class="bi bi-arrow-right-short"></i>
+                            </div>
+                        </div>
+                       </section>
+                </div>
+              </div>
+
+                  <div class="tab-pane fade" id="renascenca" role="tabpanel" aria-labelledby="profile-tab">
+
+                    <!--Aparência-->
+    
+                    <div class="row" style="padding-bottom: 25px; padding-top: 25px;">
+                        <section class="section-with-carousel">
+                             <div class="carousel-wrapper">
+                               <div class="swiper">
+                                 <div class="swiper-wrapper">
+                                   <div class="swiper-slide">
+                                     <figure id="container">
+                                         <img class="photoSlide" src="./CSS/Fotos/Disney/ursla.jpg">
+                                         <p class="description-home">Ursula</p>
+                                     </figure>
+                                   </div>
+                                   <div class="swiper-slide">
+                                     <figure id="container">
+                                         <img class="photoSlide" src="./CSS/Fotos/Disney/gaston.jpg">
+                                         <p class="description-home">Gaston</p>
+                                     </figure>
+                                   </div>
+                                   <div class="swiper-slide">
+                                     <figure id="container">
+                                         <img class="photoSlide" src="./CSS/Fotos/Disney/javar.jpg">
+                                         <p class="description-home">Jafar</p>
+                                     </figure>
+                                   </div>
+                                   <div class="swiper-slide">
+                                     <figure id="container">
+                                         <img class="photoSlide" src="./CSS/Fotos/Disney/scar.jpg">
+                                         <p class="description-home">Scar</p>
+                                     </figure>
+                                   </div>
+                                   <div class="swiper-slide">
+                                     <figure id="container">
+                                         <img class="photoSlide" src="./CSS/Fotos/Disney/shanyu.webp">
+                                         <p class="description-home">Shan Yu</p>
+                                     </figure>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                             <div class="carousel-controlsDisney">
+                              <div class="carousel-control carousel-control-left">
+                                 <i class="bi bi-arrow-left-short"></i>
+                                </div>
+                                <div class="carousel-control carousel-control-right">
+                                 <i class="bi bi-arrow-right-short"></i>
+                                </div>
+                            </div>
+                           </section>
+                    </div>
+                  </div>
+              
+
+                    <div class="tab-pane fade" id="novaRenascenca" role="tabpanel" aria-labelledby="profile-tab">
+
+                      <!--Aparência-->
+      
+                      <div class="row" style="padding-bottom: 25px; padding-top: 25px;">
+                          <section class="section-with-carousel">
+                               <div class="carousel-wrapper">
+                                 <div class="swiper">
+                                   <div class="swiper-wrapper">
+                                     <div class="swiper-slide">
+                                       <figure id="container">
+                                           <img class="photoSlide" src="./CSS/Fotos/Disney/facilier.webp">
+                                           <p class="description-home">Doutor Facilier</p>
+                                       </figure>
+                                     </div>
+                                     <div class="swiper-slide">
+                                       <figure id="container">
+                                           <img class="photoSlide" src="./CSS/Fotos/Disney/bellwether.jpg">
+                                           <p class="description-home">Bellwether</p>
+                                       </figure>
+                                     </div>
+                                     <div class="swiper-slide">
+                                       <figure id="container">
+                                           <img class="photoSlide" src="./CSS/Fotos/Disney/hans.webp">
+                                           <p class="description-home">Hans</p>
+                                       </figure>
+                                     </div>
+                                     <div class="swiper-slide">
+                                       <figure id="container">
+                                           <img class="photoSlide" src="./CSS/Fotos/Disney/turbo.webp">
+                                           <p class="description-home">Turbo</p>
+                                       </figure>
+                                     </div>
+                                   </div>
+                                 </div>
+                               </div>
+                               <div class="carousel-controlsDisney">
+                                <div class="carousel-control carousel-control-left">
+                                   <i class="bi bi-arrow-left-short"></i>
+                                  </div>
+                                  <div class="carousel-control carousel-control-right">
+                                   <i class="bi bi-arrow-right-short"></i>
+                                  </div>
+                              </div>
+                          </section>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+          <section class="section-with-carousel" id="viloesSpider">
+            <a class="link_categoria" href="./esportes.html"><h2 class="thumbTitle" id="titleVilaoDc">Vilões da Pixar</h2></a>
+             <div class="carousel-wrapper">
+               <div class="swiper">
+                 <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <figure id="container">
+                        <img class="photoSlide" src="./CSS/Fotos/Disney/sindrome.webp">
+                        <p class="description-home">Síndrome</p>
+                    </figure>
+                  </div>
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/Disney/hopper.webp">
+                         <p class="description-home">Hopper</p>
+                     </figure>
+                   </div>
+                   <div class="swiper-slide">
+                    <figure id="container">
+                        <img class="photoSlide" src="./CSS/Fotos/Disney/evelynDeavor.jpg">
+                        <p class="description-home">Evelyn Deavor</p>
+                    </figure>
+                  </div>
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/Disney/barracuda.webp">
+                         <p class="description-home">barracuda</p>
+                     </figure>
+                   </div>
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/Disney/ernestoDeLaCruz.jpg">
+                         <p class="description-home">Ernesto De La Cruz</p>
+                     </figure>
+                   </div>
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/Disney/charlesMuntz.webp">
+                         <p class="description-home">Charles Muntz</p>
+                     </figure>
+                   </div>
+                   <div class="swiper-slide">
+                     <figure id="container">
+                         <img class="photoSlide" src="./CSS/Fotos/Disney/chefeSkinner.webp">
+                         <p class="description-home">Chefe Skinner</p>
+                     </figure>
+                   </div>
+                   <div class="swiper-slide">
+                    <figure id="container">
+                        <img class="photoSlide" src="./CSS/Fotos/Disney/lotso.webp">
+                        <p class="description-home">Lotso</p>
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure id="container">
+                        <img class="photoSlide" src="./CSS/Fotos/Disney/peteFedido.webp">
+                        <p class="description-home">Pete Fedido</p>
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure id="container">
+                        <img class="photoSlide" src="./CSS/Fotos/Disney/randall.jpg">
+                        <p class="description-home">Randall</p>
+                    </figure>
+                  </div>
+                 </div>
+               </div>
+             </div>
+             <div class="carousel-controls-spider">
+               <div class="carousel-control carousel-control-left">
+                   <i class="bi bi-arrow-left-short"></i>
+                 </div>
+                 <div class="carousel-control carousel-control-right">
+                   <i class="bi bi-arrow-right-short"></i>
+                 </div>
+             </div>
+           </section>
+          
+  </main>
+
+          <footer>
+            <div class="container5">
+              <div class="row">
+                <div class="col-lg-3 mb-3">
+                  <h5 class="logo">World's Villians</h5>
+                  
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                  <h5 class="title-footer">Company</h5>
+                  <dl>
+                    <dt><a class="nav-list-endereco" href="#">about us</a></dt>
+                    <dt><a class="nav-list-endereco" href="#"> our services</a></dt>
+                    <dt><a class="nav-list-endereco" href="#">privacy policy</a></dt>
+                    <dt><a class="nav-list-endereco" href="#">affiliate program</a></dt>
+                </dl>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                  <h5 class="title-footer">Get Help</h5>
+                  <dl>
+                    <dt><a class="nav-list-endereco" href="#">about us</a></dt>
+                    <dt><a class="nav-list-endereco" href="#"> our services</a></dt>
+                    <dt><a class="nav-list-endereco" href="#">privacy policy</a></dt>
+                    <dt><a class="nav-list-endereco" href="#">affiliate program</a></dt>
+                </dl>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                  <h5 class="title-footer">Online Chat</h5>
+                  <dl>
+                    <dt><a class="nav-list-endereco" href="#">about us</a></dt>
+                    <dt><a class="nav-list-endereco" href="#"> our services</a></dt>
+                    <dt><a class="nav-list-endereco" href="#">privacy policy</a></dt>
+                    <dt><a class="nav-list-endereco" href="#">affiliate program</a></dt>
+                </dl>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                  <h5 class="title-footer">Follow us</h5>
+                  <dl class="redes">
+                    <dt><a class="nav-list-endereco" href="#"><i class="bi bi-instagram"></i></a></dt>
+                    <dt><a class="nav-list-endereco" href="#"><i class="bi bi-youtube"></i></i></a></dt>
+                    <dt><a class="nav-list-endereco" href="#"><i class="bi bi-whatsapp"></i></a></dt>
+                    <dt><a class="nav-list-endereco" href="#"><i class="bi bi-facebook"></i></a></dt>
+                </dl>
+                    
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-bottom">
+              <p> © 2022 World's Villians Company</p>
+            </div>
+
+          </footer>
+
+    <script src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+</body>
+</html>

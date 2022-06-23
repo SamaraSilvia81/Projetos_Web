@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+nav {
+    display: flex; /*Deixa um do lado do outro*/
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
+    background: #23232e;
+    height: 10vh; /*Cobre a altura da janela de visualização. 100 cobre tudo*/
+ }
+
+ 
+.nav-list{
+    list-style: none;  /* Retira as bolinhas de lista*/
+    display: flex;
+    color: #fff;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    padding-top: 18px;
+}
+
+.logo-menu{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;  /*Controla os espaços em branco do texto*/
+}
+
+.icons{
+    padding: 4%;
+    font-size: 25px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+.search-box{
+ 
+    transform: translate(-20%,-5%);
+    background:aqua;  /*#2a2a3a; */
+    height: 40px;
+    line-height: 50%;
+    border-radius: 40px;
+    padding: 10px;
+   
+}
+
+.icons-search{
+    padding-top: 2px;  /* Deixa a bolinha preta com o search no meio*/
+}
+
+.search-btn{
+    color:#fff;
+    text-decoration: none;
+    width: 40px;
+    height: 80px;
+    padding: 4px;
+    border-radius: 50%;
+    background:#23232e;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control{
+
+    float: left;
+    font-size: 16px;
+    transition: 0.4s;
+    height: 22px;
+    padding:0;
+    color: #fff;
+
+}
+
+
+/* MAIN - CAROUSEL */
+
+
+.carousel-item{
+    height: 20rem;
+    text-align: center; 
+    padding-bottom: 20px;
+}
+
+.carousel{
+    background:#2a2a3a; 
+}
+
+
+/* MAIN - JUMBOTRON */
+
+.jumbotron{
+    background: #23232e;
+}
+
+.container2{
+    text-align: center;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px; 
+}
+
+
+.header{
+    background: #23232e;
+}
+
+.body-arlequina{
+    background:#2a2a3a; 
+
+}
+
+/* MAIN - CARDS */
+
+.col-12{
+    color: #fff;
+    text-transform: uppercase;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container3{
+    padding-bottom: 60px;
+    background: #2a2a3a;
+}
+
+.card{
+    width: 320px;
+    margin-left: 60px;
+}
+
+.card-img-top{
+    height: 340px;
+}
+
+.card{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card:hover{ 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* ARTICLE */
+
+.container-article{
+    background: #23232e;
+    color: #fff;
+
+}
+
+.title-article{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.descrition-article{
+    text-align: center;
+    color: rgb(80, 173, 173);
+    padding-bottom: 20px;
+}
+
+.body-article{
+    padding-bottom: 20px;
+}
+.container-arlequina{
+    width: 1040px;
+    margin-left: 140px;
+}
+
+.figure{
+    background: #2a2a3a;
+}
+
+.figure-img:hover{ 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+
+/* FOOTER */
+
+.container5{
+    background: #23232e;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer-bottom{
+    text-align: center;  /* Faz ficar no centro */
+    line-height: 50px; /* Faz ficar no centro */
+    background-color: #fff;
+}
+
+.redes{   /* Para mudar os icons de um agrupamento vertical para horizontal  */
+    display: flex;
+    margin-left: 60px;
+}
+
+.bi{  /* Permite um espaçamento entre os ícones  */
+    padding: 5px;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Controla os espaços em branco do texto*/
+    padding-top: 40px;
+    text-decoration: none; 
+    color: #fff; 
+    margin-right: 200px;
+    margin-left: 100px;
+}
+
+.logo:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+dl{
+    text-align: center;
+}
+
+.title-footer{
+    line-height: 50px;
+    text-align: center;
+}
+
+
+/* GERAL */
+
+a {
+    color: #fff;
+    transition: 0.3s;
+    padding-bottom: 2px;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+
+@media (max-width: 999px){
+
+    body{
+        overflow-x: hidden; /*Esconde o submenu do scrolling horizontal*/
+    }
+
+    .carousel-inner{
+        height: 200px;
+    }
+    
+    .carousel{
+        height: 300px;
+    }
+
+    .carousel-item{
+        height: 8vh;
+    }    
+    
+    .redes{   /* Para mudar os icons de um agrupamento vertical para horizontal  */
+        margin-right: 40px;
+        z-index: 999;
+    }
+}
+
+@keyframes navLinkFade {  /*Representa o inicio(From) e o Fim(to) de uma animação*/
+
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }    
+}
+
+h5{
+    /* margin-left: 35px;*/
+    text-align: center;
+}

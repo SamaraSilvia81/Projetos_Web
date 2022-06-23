@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+    z-index: 999;
+}
+
+main{
+    background-color: #23232e;
+}
+
 /* HEADER */
 
 nav {
@@ -10,7 +19,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
-    background: #23232e;
+    background: #23232e; /*23232e*/
     height: 10vh; /*Cobre a altura da janela de visualização. 100 cobre tudo*/
  }
 
@@ -18,7 +27,6 @@ nav {
 .nav-list{
     list-style: none;  /* Retira as bolinhas de lista*/
     display: flex;
-    color: #fff;
 }
 
 .nav-list li{
@@ -27,10 +35,66 @@ nav {
     padding-top: 18px;
 }
 
+
+/*About*/
+
+#campoAbout{
+    display:none;
+    position: absolute;
+    margin-top: 24rem;
+    justify-content: center;
+    width: 100%;
+    height: 52%;
+    background-color: #2a2a3a;
+    z-index: 999;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn{
+    from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+#personFavorite{
+    text-decoration: none;
+    color: black;
+}
+
+#nomeSite{
+    color: rgb(80, 173, 173);
+}
+
+
+
+#divAbout{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+#textAbout{
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+}
+#tituloAbout{
+    color: #fff;
+    font-weight: 500;
+    padding-top: 5%;
+}
+#linhaAbout{
+    color: white;
+}
+
+.nav-list-endereco{
+    text-decoration: none !important;
+    color: #fff;
+}
+
 .logo-menu{
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;  /*Controla os espaços em branco do texto*/
+    text-decoration: none !important;
+    color: #fff;
 }
 
 .icons{
@@ -39,17 +103,6 @@ nav {
     color: #fff;
     display: none;
     cursor: pointer;
-}
-
-.search-box{
- 
-    transform: translate(-20%,-5%);
-    background:aqua;  /*#2a2a3a; */
-    height: 40px;
-    line-height: 50%;
-    border-radius: 40px;
-    padding: 10px;
-   
 }
 
 .icons-search{
@@ -80,7 +133,7 @@ nav {
 }
 
 
-/* MAIN - CAROUSEL */
+/* MAIN - CAROUSEL - HOME */
 
 
 .carousel-item{
@@ -94,7 +147,7 @@ nav {
 }
 
 
-/* MAIN - JUMBOTRON */
+/* MAIN - JUMBOTRON - HOME */
 
 .jumbotron{
     background: #23232e;
@@ -107,7 +160,6 @@ nav {
     padding-bottom: 40px; 
 }
 
-
 .header{
     background: #23232e;
 }
@@ -117,7 +169,7 @@ nav {
 
 }
 
-/* MAIN - CARDS */
+/* MAIN - CARDS - HOME */
 
 .col-12{
     color: #fff;
@@ -152,17 +204,335 @@ nav {
 }
 
 
-/* ARTICLE */
+/* ARTICLE - HOME*/
 
 .container-article{
+    margin-top: 40px;
     background: #23232e;
     color: #fff;
 
 }
 
+.container-article2{
+    background: #23232e;
+    color: #fff;
+
+}
+
+.img-api{
+    height: 400px;
+    width: 300px;
+}
+
 .title-article{
     padding-top: 20px;
     text-align: center;
+    text-transform: uppercase;
+}
+
+/*Carousel body HOME*/
+
+.link_categoria{
+    text-decoration:none !important; 
+}
+
+.thumbTitle{
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-size: 25px;
+    line-height: 14px;
+    font-weight: 500;
+    margin: 0 6% 12px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#titleVilaoDc{
+    padding-top: 5%;
+}
+
+.swiper-slide{
+    padding-left: 12px;
+    padding-right: 25px;
+    margin-left: 12px;
+}
+
+.photoSlide{
+    width: 100%;
+    height: 30rem;
+    left: 0%;
+    right: auto;
+    top: 0px;
+    border-radius: 2%;
+}
+
+.photoSlide:hover{ 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+figcaption{
+    top: 15rem;
+    left: 22rem;
+    font-size: 20px;
+}
+
+.description-home{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.section-with-carousel .carousel-controls-arlequina {
+    position: absolute;
+    top: 270%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1;
+    font-size: 30px;
+  }
+
+  #viloesSpider{
+    background-color: #2a2a3a;
+  }
+
+  #backContainer{
+    background-color: #EFF0F2;
+  }
+
+  #marvel{
+    margin-left: 25rem;
+  }
+
+  #dc{
+    margin-left: 30rem;
+  }
+
+  #disney{
+    margin-left: 20rem;
+  }
+
+  .carousel-controlsAvengers {
+    position: absolute;
+    top: 140%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1;
+    font-size: 30px;
+  }
+
+  .eraDeOuro{
+    display: flex;
+    padding-left: 5%;
+  }
+
+  #containerOuro{
+    padding-left: 5%;
+  }
+
+  .photoSlideOuro{
+    width: 100%;
+    height: 30rem;
+    right: auto;
+    top: 0px;
+    border-radius: 2%;
+}
+
+.photoSlideOuro:hover{ 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+  .carousel-controlsDisney {
+    position: absolute;
+    top: 140%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1;
+    font-size: 30px;
+  }
+
+    .carousel-controlsLiga {
+    position: absolute;
+    top: 140%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1;
+    font-size: 30px;
+  }
+
+  .carousel-controls-spider {
+    position: absolute;
+    top: 248%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1;
+    font-size: 30px;
+  }
+
+  .carousel-controls-batman {
+    position: absolute;
+    top: 248%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1;
+    font-size: 30px;
+  }
+
+  .carousel-controls-flash {
+    position: absolute;
+    top: 348%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1;
+    font-size: 30px;
+  }
+
+  .carousel-controls-xmen{
+    position: absolute;
+    top: 140%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1;
+    font-size: 30px;
+  }
+
+  .carousel-controls-quarteto {
+    position: absolute;
+    top: 140%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1;
+    font-size: 30px;
+  }
+
+  .carousel-controls-guardioes {
+    position: absolute;
+    top: 140%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1;
+    font-size: 30px;
+  }
+
+.section-with-carousel .carousel-controls1 {
+  position: absolute;
+  top: 445%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  z-index: 1;
+  font-size: 30px;
+}
+
+.section-with-carousel .carousel-controls2 {
+    position: absolute;
+    top: 545%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1;
+    font-size: 30px;
+  }
+
+
+  .section-with-carousel .carousel-controls3 {
+    position: absolute;
+    top: 645%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1;
+    font-size: 30px;
+  }
+.carousel-control-left{
+    padding-left: 1rem;
+    color: #fff;
+    background-color: #0A193C;
+    border-radius: 100%;
+    padding-left: 2px;
+    width: 42px;
+}
+
+.carousel-control-right{
+    padding-left: 5rem;
+    color: #fff;
+    background-color: #0A193C;
+    border-radius: 100%;
+    padding-left: 2px;
+    width: 42px;
+}
+
+/* Categorias*/
+
+.nav-tabs {  /* Quando não está selecionado*/
+    background-color: #2a2a3a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#public{
+    margin-left: 150px;
+}
+
+.nav-item{
+    background-color:transparent;
+    margin-right: 50px;
+}
+
+#myTabContent{
+    background-color: #2a2a3a;
 }
 
 .descrition-article{
@@ -174,13 +544,37 @@ nav {
 .body-article{
     padding-bottom: 20px;
 }
+
 .container-arlequina{
     width: 1040px;
     margin-left: 140px;
 }
 
+.personalidade{
+    text-align: justify;
+    padding-left: 100px;
+    color: #fff;
+}
+
+#apperence{
+    text-align: justify;
+    padding-left: 100px;
+    color: #fff;
+}
+
+#power{
+    text-align: justify;
+    padding-left: 150px;
+    color: #fff;
+}
+
+#equipaments{
+    padding-top:20px;
+    color: #fff;
+}
+
 .figure{
-    background: #2a2a3a;
+    background: #23232e;
 }
 
 .figure-img:hover{ 
@@ -188,8 +582,71 @@ nav {
     transform: scale(1.1);
 }
 
+.videoExtra{
+    padding-top: 3%;
+    display: flex;
+    padding-left: 100px;
+}
 
+#equipaments{
+    padding-left: 70px;
+    text-align: justify;
+}
 
+.videoPower{
+    padding-top: 2%;
+    display: flex;
+}
+
+#descricaoVideoPower{
+    padding-top: 5%;
+}
+
+#photo{
+    height: 400px;
+    width: 450px;
+    padding-left: 100px;
+}
+
+#btnImg:hover {
+	background: #23232e;
+}
+
+#btnImg{
+    margin-top: 2%;
+    margin-left: 200px;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 6px 6px;
+    background: #0A193C;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#apperanceGroup{
+    display: flex;
+    padding-top: 3%;
+}
+
+#descricao-video{
+    padding-left: 20px;
+    color: #fff;
+}
+
+.aparencia{
+    padding-top: 12%;
+}
+
+.titleVideo{
+    text-align: center;
+    padding-top:10%
+}
+
+.textVideo{
+    text-align: justify;
+}
 
 /* FOOTER */
 
@@ -199,10 +656,22 @@ nav {
     font-size: 12px;
 }
 
+
+.footer-arlequina{
+    padding-top: 2%;
+    background: #2a2a3a;
+}
+
+.container-arlequina{
+    background: #2a2a3a;
+    color: #fff;
+    font-size: 12px;
+}
+
 .footer-bottom{
     text-align: center;  /* Faz ficar no centro */
     line-height: 50px; /* Faz ficar no centro */
-    background-color: #fff;
+    background-color:  #fff;
 }
 
 .redes{   /* Para mudar os icons de um agrupamento vertical para horizontal  */

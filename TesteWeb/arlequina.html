@@ -4,35 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste Web - Semântico</title>
+    <title>World's Villians - Arlequina</title>
 
     <link href="./CSS/style.css" rel="stylesheet">
+    <script src="./JavascriptAssíncrono/teste.js" defer></script>
+    <script src="./index.js" defer></script>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parse/3.4.1/parse.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <body>
 
     <header>
         <nav>
-            <a class="logo-menu" href="index.html">World's Villians</a> 
+            <a class="logo-menu" href="home.html">World's Villians</a> 
 
             <div class="icons">
               <i class="bi bi-list"></i>
             </div>
             
             <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="https://disney.fandom.com/pt-br/wiki/Disney_Vil%C3%B5es">Disney</a></li>
-                <li><a href="https://www.legiaodosherois.com.br/lista/viloes-universo-cinematografico-marvel.html">Marvel</a></li>
-                <li><a href="https://pop.proddigital.com.br/listas/lista-os-15-viloes-mais-poderosos-da-dc-comics">DC</a></li>
-                <li><a href="https://www.midiorama.com/os-10-maiores-viloes-de-the-vampire-diaries">Outros</a></li>
+                <li><a class="nav-list-endereco" href="home.html">Home</a></li>
+                <li href="#"><a class="nav-list-endereco"  onclick="toggle()">About</a></li>
+                <li><a class="nav-list-endereco" href="disney.html">Disney</a></li>
+                <li><a class="nav-list-endereco" href="marvel.html">Marvel</a></li>
+                <li><a class="nav-list-endereco" href="dc.html">DC</a></li>
+                <li><div class="icons-search">
+                  <a class="search-btn" href="#">
+                    <i class="bi bi-search" ></i>
+                  </a>
+                  </div>
+                </li>
             </ul>
-            
+            <div id="campoAbout"></div>
         </nav> 
     </header>
 
@@ -47,21 +62,21 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="CSS/Jinx2.jpg" class="img-fluid" alt="Responsive image">
+                    <img src="./CSS/Fotos/Arlequina2.jpg" class="img-fluid" alt="Responsive image">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>"Você é Perfeita"</h5>
-                      <p>♫ Oh, the misery Everybody wants to be my enemy ♫</p>
+                        <h5>HA HA HA</h5>
+                        <p>"Não tenho certeza se atraio loucos ou se sou eu que os faço ser dessa maneira"</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="CSS/hela2.jpg"class="img-fluid" alt="Responsive image">
+                    <img src="./CSS/Fotos/harley2.jpg"class="img-fluid" alt="Responsive image">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Rainha sem coroa</h5>
-                      <p>"Eu não sou uma rainha, ou um monstro… eu sou a deusa da morte! Você é o deus de quê, mesmo?"</p>
+                        <h5>HA HA HA</h5>
+                        <p>"Não tenho certeza se atraio loucos ou se sou eu que os faço ser dessa maneira"</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="CSS/15796098001816.jpg" class="img-fluid" alt="Responsive image">
+                    <img src="./CSS/Fotos/harley3.jpg" class="img-fluid" alt="Responsive image">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>HA HA HA</h5>
                       <p>"Não tenho certeza se atraio loucos ou se sou eu que os faço ser dessa maneira"</p>
@@ -79,7 +94,7 @@
               </div>
         </section>
 
-        <div class="container-article">
+        <div class="container-article2">
             <div class="row">
               <div class="col-2"></div>
               <div class="col-8">
@@ -88,29 +103,228 @@
                     
                     <h4 class="title-article">ARLEQUINA</h4>
                     <h6 class="descrition-article">Harleen Francis Quinzel</h6>
-
-                <p class="body-article">
                     
-                    Dr. Harleen Frances Quinzel, também conhecida como Harley Quinn, apareceu pela primeira vez em Batman: The Animated Series no episódio "Um Favor Para o Coringa" 
-                    (Episódio #22, data original em que foi ao ar: 11 de setembro de 1992), onde ela serviu como uma ajudante do Coringa. Em suas primeiras aparições ela foi retratada
-                    como uma personagem totalmente dedicada ao Coringa, totalmente alheia à sua natureza psicótica e sua óbvia falta de afeto por ela foram algumas caracterizações que 
-                    se mantiveram, mais ou menos, consistente ao longo de suas aparições subsequentes. Seu nome está relacionado com o famoso palhaço "Arlequim". 
+                    <p class="body-article">
+                        
+                        Dr. Harleen Frances Quinzel, também conhecida como Harley Quinn, apareceu pela primeira vez em Batman: The Animated Series no episódio "Um Favor Para o Coringa" 
+                        (Episódio #22, data original em que foi ao ar: 11 de setembro de 1992), onde ela serviu como uma ajudante do Coringa. Em suas primeiras aparições ela foi retratada
+                        como uma personagem totalmente dedicada ao Coringa, totalmente alheia à sua natureza psicótica e sua óbvia falta de afeto por ela foram algumas caracterizações que 
+                        se mantiveram, mais ou menos, consistente ao longo de suas aparições subsequentes. Seu nome está relacionado com o famoso palhaço "Arlequim". 
 
-                    <br><br>A origem da personagem foi contada em The Batman Adventures: Mad Love. Continuação de Batman: The Animated Series. Foi escrita e desenhada por Paul Dini e Bruce Timm 
-                    (dois dos produtores da série animada e criadores de Harley). A história em quadrinhos revelou a origens de Harley como uma Psiquiatra do Arkham Azylum que se apaixonou 
-                    pelo Coringa. A história foi muito bem recebida pelos fãs e ganhou o Eisner and Harvey Awards por Melhor Comic Issue Single do Ano.
-              
-                    <br><br>A história Mad Love foi imaginada como muito violenta para a série animada, apesar de ter sido eventualmente adaptada em The New Batman Adventures Série no episódio "Mad Love" em 1999.
-                
-                </p>
+                        <br><br>A origem da personagem foi contada em The Batman Adventures: Mad Love. Continuação de Batman: The Animated Series. Foi escrita e desenhada por Paul Dini e Bruce Timm 
+                        (dois dos produtores da série animada e criadores de Harley). A história em quadrinhos revelou a origens de Harley como uma Psiquiatra do Arkham Azylum que se apaixonou 
+                        pelo Coringa. A história foi muito bem recebida pelos fãs e ganhou o Eisner and Harvey Awards por Melhor Comic Issue Single do Ano.
+                    
+                        <br><br>A história Mad Love foi imaginada como muito violenta para a série animada, apesar de ter sido eventualmente adaptada em The New Batman Adventures Série no episódio "Mad Love" em 1999.
+                    
+                    </p>
         
                 </article>
               </div>
+            </div>
+        </div>
 
-              <figure class="figure">
+              <!--Nav-Fedd-->
 
+              <ul class="nav nav-tabs nav-feed" id="myTab" role="tablist">
+                  <li class="nav-item" id="public" role="presentation">
+                      <a class="nav-link active nav-link-1" id="home-tab" data-bs-toggle="tab" href="#home" role="tab"
+                          aria-controls="home" aria-selected="true"><i class="bi bi-grid-3x3"></i> PERSONALIDADE</a>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                      <a class="nav-link nav-link-2" id="apperence-tab" data-bs-toggle="tab" href="#apperence" role="tab"
+                          aria-controls="apperence" aria-selected="false"><i class="bi bi-file-person"></i> APARÊNCIA</a>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link nav-link-3" id="power-tab" data-bs-toggle="tab" href="#power" role="tab"
+                        aria-controls="power" aria-selected="false"><i class="bi bi-file-person"></i> PODERES/HABILIDADES</a>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link nav-link-3" id="equipaments-tab" data-bs-toggle="tab" href="#equipaments" role="tab"
+                        aria-controls="equipaments" aria-selected="false"><i class="bi bi-file-person"></i> EQUIPAMENTOS</a>
+                  </li>
+                </ul>
+
+                
+                    <!--Card Fedd-->
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                            <!--Personalidade-->
+
+                            <div class="row" style="padding-bottom: 25px; padding-top: 25px;">
+                                <div class="col-11">
+
+                                    <p class="personalidade">Arlequina possui uma personalidade muito submissa, sempre se entregando ao 
+                                    Coringa e fazendo suas vontades. Além disso, Arlequina já foi psiquiatra, então apresenta uma grande inteligência, 
+                                    embora nem sempre percebamos analisando de forma ''crua''. Após se unir ao Coringa, adquiriu um comportamento muito 
+                                    semelhante ao de seu amado, se tornando uma personagem insana e maluca, fazendo de tudo por diversão. Em algumas HQs 
+                                    mais modernas, ela possui um comportamento menos desequilibrado, tendo em raras ocasiões uma certa seriedade.
+                                    </p>
+                                    
+                                    <div class="videoExtra">
+
+                                        <div class="col-xs-12 col-sm-6 com-md-7">
+                                            <div id="player"></div>
+                                        </div>
+                    
+                                        <div class="col-xs-12 col-sm-6 com-md-7" id="descricao-video">
+                                            <h4 class="titleVideo"> Psicologia da Arlequina | Realmente ama Coringa? </h4>
+                                            <p class="textVideo">
+                                                Análise psicológica da Arlequina e de algumas tretas em aves de rapina. 
+                                                Sem duvidas ele é uma das personagens com o Perfil Psicológico mais complexo da DC então aqui vamos tentar explorar mais sobre a história da arlequina e quem é.
+                                            </p>
+                                        </div>                                        
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="apperence" role="tabpanel" aria-labelledby="profile-tab">
+
+                            <!--Aparência-->
+
+                            <div class="row" style="padding-bottom: 25px;">
+                                <div class="col-11" id="apperanceGroup"> 
+
+                                    <div class="col-xs-12 col-sm-6 com-md-7" id="descricao-video">
+                                        <p class="aparencia">Arlequina é uma das personagens que mais mudam a aparência. 
+                                            Originalmente, era uma palhacinha com a pele branca e uma máscara preta cobrindo em 
+                                            torno dos olhos e um traje nas cores vermelho e preto. 
+                                            
+                                            <br><br>Em outras versões seu traje foi se "modernizando" e mudando bastante, em muitas vezes retirando sua máscara e a "toca" em sua cabeça. 
+                                            Seu cabelo originalmente loiro já teve mechas pretas e vermelhas, azuis e rosas, e em algumas versões 
+                                            azuis e vermelhas, e em outras seu cabelo é totalmente dividido entre duas cores. Mas seu traje geralmente 
+                                            permanece com as mesmas cores predominantes, o preto e o vermelho, as vezes uns detalhes azuis e brancos.
+                                        </p>
+                                    </div>     
+                                    
+                                    <div class="col-xs-12 col-sm-6 com-md-7" id="photoArlequina">
+                                       <!--<img id="photo" /><br />
+		                            	<button id="btnImg">Change Photo</button>-->
+                                    </div>
+                                     
+                                </div>  
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="power" role="tabpanel" aria-labelledby="profile-tab">
+
+                            <!--Poderes e Habilidades-->
+
+                            <div class="row" style="padding-bottom: 25px; padding-top: 25px;">
+                                <div class="col-11">    
+                                    <div class="videoPower">
+
+                                        <div class="col-xs-12 col-sm-6 com-md-7" id="descricaoVideoPower">
+
+                                            <ul>
+                                                <li>Força e agilidade soberbas</li>
+                                                <li>Habilidosa com ginástica e acrobacias</li>
+                                                <li>Lutadora imprevisível</li>
+                                                <li>Imune a maioria das toxinas</li>
+                                                <li>Bem mais inteligente do que aparenta</li>
+                                            </ul>
+                                        </div>
+
+                                        
+                                        <div class="col-xs-12 col-sm-6 com-md-7">
+                                            <div id="player2"></div>
+                                        </div>
+
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                            
+                        <div class="tab-pane fade" id="equipaments" role="tabpanel" aria-labelledby="profile-tab">
+
+                            <!--Poderes e Habilidades-->
+
+                            <div class="row" style="padding-bottom: 25px; padding-top: 25px;">
+                                <div class="col-11" id="equipaments">    
+
+                                    <p>
+                                        A <span style="color: rgb(80, 173, 173);">Marreta</span> é sua arma mais popular é uma marreta enorme que varia muito no material, sendo algumas vezes feito totalmente de madeira e outras de metal, e raramente aparenta ser de pedra.
+                                        Também tem o <span style="color: rgb(80, 173, 173);">Taco de Baseboll</span>, no qual usou em suas aventuras dos `novos 52` (HQ).
+                                        Arlequina possui além das já citadas, várias armas de fogo, explosivos, até algumas coisas com ácidos, bombas de fumaça e etc.
+                                        Ela possui um sinalizador, uma caixa de música que explode remotamente.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <section class="section-with-carousel">
+                    <a class="link_categoria" href=""><h2 class="thumbTitle">Cinema e TV</h2></a>
+                     <div class="carousel-wrapper">
+                       <div class="swiper">
+                         <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                             <figure id="container">
+                                 <img class="photoSlide" src="./CSS/Fotos/FilmografiaHarley/avesDeRapina.jpg">
+                                 <p class="description-home">Aves de Rapina</p>
+                             </figure>
+                           </div>
+                           <div class="swiper-slide">
+                             <figure id="container">
+                                 <img class="photoSlide" src="./CSS/Fotos/FilmografiaHarley/batHarley.jpg">
+                                 <p class="description-home">Batman e Arlequina</p>
+                             </figure>
+                           </div>
+                           <div class="swiper-slide">
+                             <figure id="container">
+                                 <img class="photoSlide" src="./CSS/Fotos/FilmografiaHarley/esquadraoSuicida.webp">
+                                 <p class="description-home">Esquadrão Suicida 2021</p>
+                             </figure>
+                           </div>
+                           <div class="swiper-slide">
+                             <figure id="container">
+                                 <img class="photoSlide" src="./CSS/Fotos/FilmografiaHarley/esquadraoSuicida2.webp">
+                                 <p class="description-home">Esquadrao Suicida 2018</p>
+                             </figure>
+                           </div>
+                           <div class="swiper-slide">
+                             <figure id="container">
+                                 <img class="photoSlide" src="./CSS/Fotos/FilmografiaHarley/gothamGirls.jpg">
+                                 <p class="description-home">Gotham Girls</p>
+                             </figure>
+                           </div>
+                           <div class="swiper-slide">
+                            <figure id="container">
+                                <img class="photoSlide" src="./CSS/Fotos/FilmografiaHarley/harleyQuinn.jpg">
+                                <p class="description-home">Harley Quinn</p>
+                            </figure>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="carousel-controls-arlequina">
+                       <div class="carousel-control carousel-control-left">
+                          <i class="bi bi-arrow-left-short"></i>
+                         </div>
+                         <div class="carousel-control carousel-control-right">
+                          <i class="bi bi-arrow-right-short"></i>
+                         </div>
+                     </div>
+                   </section>
+                
+
+                
+                                
+                        
+                                 
+              <!--<figure class="figure">
                 <div class="container-arlequina">
-
                      <div class="row">
                                     
                         <div class="col-12">
@@ -174,40 +388,63 @@
                         </div>
                     </div>
                 </div>
-            </figure>
+            </figure>-->
 
+        </main>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 com-md-7">
-                        <video class="col-xs-12" width="100%" height="auto" controls play>
-                            <source src="./CSS/a-bela-e-a-fera-em-portugues-historia-completa-desenho-animado.mp4"> 
-                        </video>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 com-md-7">
-                        <h3> Saber Mais </h3>
-
-                        <ul>Conhecendo a palhacinha do crime</ul>
-                       <li> <a  href="index.html">Origem</a></li>
-                        <a></a><li>Relacionamentos</li>
-                        <a></a> <li>Características</li>
-                        <a></a><li>Personalidade</li>
-                        <a></a><li>Poderes e Habilidades </li>
-                        <a></a><li>Equipamentos</li>
-                        <a></a><li>Meio Artístico</li>
- 
-                        
-                        <br><p>lslslslslsls</p>
-                    </div>
-
-
-
-
-
+        <footer class="footer-arlequina">
+            <div class="container-arlequina">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                <h5 class="logo">World's Villians</h5>
+                
                 </div>
 
+                <div class="col-6 col-lg-2 mb-3">
+                <h5 class="title-footer">Company</h5>
+                <dl>
+                    <dt><a href="#" class="nav-list-endereco">about us</a></dt>
+                    <dt><a href="#" class="nav-list-endereco"> our services</a></dt>
+                    <dt><a href="#" class="nav-list-endereco">privacy policy</a></dt>
+                    <dt><a href="#" class="nav-list-endereco">affiliate program</a></dt>
+                </dl>
+                </div>
 
+                <div class="col-6 col-lg-2 mb-3">
+                <h5 class="title-footer">Get Help</h5>
+                <dl>
+                    <dt><a href="#" class="nav-list-endereco">about us</a></dt>
+                    <dt><a href="#" class="nav-list-endereco"> our services</a></dt>
+                    <dt><a href="#" class="nav-list-endereco">privacy policy</a></dt>
+                    <dt><a href="#" class="nav-list-endereco">affiliate program</a></dt>
+                </dl>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                <h5 class="title-footer">Online Chat</h5>
+                <dl>
+                    <dt><a href="#" class="nav-list-endereco">about us</a></dt>
+                    <dt><a href="#" class="nav-list-endereco"> our services</a></dt>
+                    <dt><a href="#" class="nav-list-endereco">privacy policy</a></dt>
+                    <dt><a href="#" class="nav-list-endereco">affiliate program</a></dt>
+                </dl>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-3">
+                <h5 class="title-footer">Follow us</h5>
+                <dl class="redes">
+                    <dt><a href="#" class="nav-list-endereco"><i class="bi bi-instagram"></i></a></dt>
+                    <dt><a href="#" class="nav-list-endereco"><i class="bi bi-youtube"></i></i></a></dt>
+                    <dt><a href="#" class="nav-list-endereco"><i class="bi bi-whatsapp"></i></a></dt>
+                    <dt><a href="#" class="nav-list-endereco"><i class="bi bi-facebook"></i></a></dt>
+                </dl>
+                    
+                </div>
             </div>
-        
-</main>
+            </div>
+
+            <div class="footer-bottom">
+            <p> © 2022 World's Villians Company</p>
+            </div>
+
+        </footer>
